@@ -28,10 +28,11 @@ class CardGame
     #function will not know what card is as the parameters are card1 and card2. Also the card class does not have a .name function or variable, therefore we can assume by studying the whole function that this should read return card1.
   else
     #this may work in ruby however it is best to specify you are returning card2
-    card2
+    card2.
+    # Also the else is not required. end the if statement and then return card2 as function will stop if it hits first return 
   end
 end
-#there are 1 too many ends. Also indentation is bad 
+#there are 1 too many ends. Also indentation is bad
 end
 
 def self.cards_total(cards)
