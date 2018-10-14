@@ -11,11 +11,12 @@
 require_relative('card.rb')
 class CardGame
 
-
+#whilst this will run, ruby convention mean we should use snake case for function names
   def checkforAce(card)
     if card.value = 1
       return true
     else
+      #the return is not required as the logical operator will assume false if not true in this case
       return false
     end
   end
@@ -30,6 +31,7 @@ class CardGame
     card2
   end
 end
+#there are 1 too many ends. Also indentation is bad 
 end
 
 def self.cards_total(cards)
