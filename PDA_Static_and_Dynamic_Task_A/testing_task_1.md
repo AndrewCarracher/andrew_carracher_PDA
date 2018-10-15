@@ -11,7 +11,7 @@
 require_relative('card.rb')
 class CardGame
 
-#whilst this will run, ruby convention mean we should use snake case for function names
+#whilst this will run, ruby convention mean we should use snake case for function names. Also if passing in card should be class method, class will be able to access it's own variables.
   def checkforAce(card)
     if card.value = 1
       return true
@@ -29,7 +29,7 @@ class CardGame
   else
     #this may work in ruby however it is best to specify you are returning card2
     card2.
-    # Also the else is not required. end the if statement and then return card2 as function will stop if it hits first return 
+    #should be an elsif as there are three possible outcomes (they could be equal)
   end
 end
 #there are 1 too many ends. Also indentation is bad
