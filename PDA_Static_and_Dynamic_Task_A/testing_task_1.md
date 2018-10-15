@@ -14,6 +14,7 @@ class CardGame
 #whilst this will run, ruby convention mean we should use snake case for function names. Also if passing in card should be class method, class will be able to access it's own variables.
   def checkforAce(card)
     if card.value = 1
+      # equality is tested by ==
       return true
     else
       #the return is not required as the logical operator will assume false if not true in this case
@@ -21,7 +22,7 @@ class CardGame
     end
   end
 
-  # typing error, will not run. Should read def not dif. also must have comma in parameters
+  # typing error, will not run. Should read def not dif. also must have comma in parameters. also should be class method
   dif highest_card(card1 card2)
   if card1.value > card2.value
     return card.name
@@ -40,6 +41,7 @@ def self.cards_total(cards)
   total
   for card in cards
     total += card.value
+    #return should be outside for loop, include total in string interpolation 
     return "You have a total of" + total
   end
 end
